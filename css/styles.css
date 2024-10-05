@@ -1,0 +1,124 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  background-color: 3f9faff;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title {
+  padding: 40px 0 10px 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.container {
+  font-family: 'Lexend', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.wrapper {
+  padding: 30px;
+  width: 300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 5px;
+}
+
+.wrapper > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+}
+
+/*==========================================*/
+
+.grid-container {
+  display: grid;
+  height: 800px;
+  justify-content: center;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: 80px 200px 80px;
+  gap: 10px 20px;
+}
+.grid-container > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+}
+
+.grid-item1 {
+  grid-column: 1 / span 3;
+}
+
+.grid-item2 {
+  grid-column: 4 / span 3;
+}
+
+.grid-item3 {
+  grid-row: 2 / span 2;
+}
+
+.grid-item4 {
+  grid-column: 2 / span 4;
+  grid-row: 2 / 3;
+}
+
+.grid-item5 {
+  grid-row: 2 / 4;
+}
+
+.grid-item11 {
+  grid-area: 4 / 2 / 6 / 6;
+}
+
+/*==========================================*/
+
+.header {
+  grid-area: header;
+}
+.menu {
+  grid-area: menu;
+}
+.main {
+  grid-area: main;
+}
+.right {
+  grid-area: right;
+}
+.footer {
+  grid-area: footer;
+}
+
+.areas-wrapper {
+  background-color: rgb(27, 113, 226);
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+}
+
+.areas-wrapper > div {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+}
+
+.header {
+  grid-area: myArea;
+}
