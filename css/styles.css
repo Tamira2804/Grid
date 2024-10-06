@@ -83,7 +83,7 @@ h1 {
   grid-area: 4 / 2 / 6 / 6;
 }
 
-/*==========================================*/
+/*=============areas==========================*/
 
 .header {
   grid-area: header;
@@ -102,11 +102,14 @@ h1 {
 }
 
 .areas-wrapper {
+  margin: 50px 0;
+  padding: 10px;
   background-color: rgb(27, 113, 226);
   color: black;
   font-size: 20px;
   text-align: center;
   display: grid;
+  gap: 10px;
   grid-template-areas:
     'header header header header header header'
     'menu main main main right right'
@@ -116,5 +119,42 @@ h1 {
 .areas-wrapper > div {
   background-color: lightblue;
   padding: 10px;
-  margin: 10px;
+}
+
+/*================poryadok==========================*/
+
+.poryadok {
+  margin: 50px 0;
+  padding: 10px;
+  background-color: rgb(172, 230, 186);
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.poryadok > div {
+  background-color: rgb(231, 243, 69);
+  padding: 10px;
+}
+
+.item1 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.item2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.item3 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.item4 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.item5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.item6 {
+  grid-area: 2 / 2 / 3 / 3;
 }
