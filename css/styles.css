@@ -104,7 +104,7 @@ h1 {
 .areas-wrapper {
   background-color: rgb(27, 113, 226);
   color: black;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   display: grid;
   grid-template-areas:
@@ -115,10 +115,6 @@ h1 {
 
 .areas-wrapper > div {
   background-color: lightblue;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
-}
-
-.header {
-  grid-area: myArea;
 }
